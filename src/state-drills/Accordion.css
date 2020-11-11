@@ -1,0 +1,15 @@
+.section-list {
+    list-style-type: none;
+}  
+ 
+button {
+    background: rgb(18, 58, 0);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+  
+p {
+    margin: 0;
+    padding: 8px;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Accordion.css'
 
 class Accordion extends React.Component {
     static defaultProps = {
@@ -11,7 +12,7 @@ class Accordion extends React.Component {
             currentSection: null
         }
     }
-    
+
     handleSectionClick = (sectionI) => {
         this.setState({ currentSection: sectionI })
     }
@@ -31,7 +32,7 @@ class Accordion extends React.Component {
         const sections = this.props.sections
         const currentSection = this.state.currentSection
         return (
-            <ul>
+            <ul className='section-list'>
                 {sections.map((section, index) =>
                     this.renderLi(section, index, currentSection))}
             </ul>
